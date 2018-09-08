@@ -13,12 +13,14 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-
+//General styles, variables and mixins
 @import 'sass/general/general';
 @import 'sass/general/vars';
 
 //Header and nav
-@import 'sass/nav/nav-lg';
+@import 'sass/nav/nav-sm';
+@import 'sass/nav/btn-menu';
+// @import 'sass/nav/nav-lg';
 
-
+//Main page video
 @import 'sass/landing/landing-lg';

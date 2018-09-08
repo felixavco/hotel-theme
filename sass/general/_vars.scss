@@ -1,7 +1,13 @@
+$header-h: 5rem;
 $shadow: #333;
 $text-white: #e9e7e7;
+$text-color: #333;
+$bg-color: #010144;
 $title-font: 'Lobster', cursive;
 $p-font:'Roboto', sans-serif;
+$bg-mb: #fff;
+
+
 
 
 
@@ -10,6 +16,17 @@ $p-font:'Roboto', sans-serif;
   text-shadow: 2px 2px 7px $shadow;
   font-family: $title-font;
   font-size: $fs;
+}
+
+@mixin shadow {
+  box-shadow: 0 0 10px $shadow;
+}
+
+@mixin flex ($dir: column, $jc: center, $ai:center) {
+  display: flex;
+  flex-direction: $dir;  
+  justify-content: $jc;
+  align-items: $ai;
 }
 
 

@@ -1,0 +1,123 @@
+header {
+  width: 100vw;
+  height: $header-h;
+  position: fixed;
+  top: 0%;
+  background: $bg-color;
+  z-index: 1000;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  h3 {
+    color: $text-white;
+    @include title (1.7rem);
+    margin: 0;
+  }
+
+  .header-top {
+    height: 100%;
+    @include flex (row, space-between, center);
+    padding: 1rem 1.5rem; 
+
+
+    .contact-info {
+      background: navy;
+      display: none;
+    }
+
+    .logo-cont {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      overflow: hidden;
+      @include shadow();
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .social-media {
+      background: $bg-mb;
+      position: absolute;
+      top: $header-h;
+      left: 0%;
+      width: 20%;
+      height: 100vh;
+
+      ul{
+        text-align: center;
+        padding-top: 4rem;
+        @include flex();
+
+        li{
+          margin-top: 1rem;
+          padding: 1rem;
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          @include flex();
+          @include shadow();
+          transition: transform 250ms linear;
+          &:hover {
+            transform: scale(1.1);
+          }
+          a {
+            font-size: 1.7rem;
+            color: white;
+          }
+
+        }  
+        .fb {background: #3b5998}
+        .insta {background: #c13584}
+        .yt {background: #ff0000}
+        .tw {background: #1da1f2}
+      }
+    }
+  }
+
+  .header-bottom {
+    nav {
+      background: $bg-mb;
+      position: absolute;
+      top: $header-h;
+      left: 20%;
+      height: 100vh;
+
+      .menu-cont{
+        padding: 0;
+        ul{
+          text-align: center;
+          padding-top: 4rem;
+          width: 100%;
+  
+          li{
+            margin-top: 1rem;
+            padding: 1rem;
+            width: 100%;
+            border-radius: 0.2rem;
+  
+            a {
+              font-size: 1.7rem;
+              color: $text-color;
+            }
+
+            &:hover {
+              background: $bg-color;
+              @include shadow();
+              a {
+                color: $text-white;
+                text-decoration: none;
+              }
+            }
+          }  
+        }
+      }
+
+  
+    }
+  }
+}
