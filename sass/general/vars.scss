@@ -1,0 +1,15 @@
+$shadow: #333;
+$text-white: #e9e7e7;
+$title-font: 'Lobster', cursive;
+$p-font:'Roboto', sans-serif;
+
+
+
+//Mixins
+@mixin title($fs) {
+  text-shadow: 2px 2px 7px $shadow;
+  font-family: $title-font;
+  font-size: $fs;
+}
+
+
