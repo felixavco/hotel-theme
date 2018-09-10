@@ -1,0 +1,105 @@
+@media screen and (min-width: $mob-lan){
+  header {
+ 
+    .header-top {
+  
+      .social-media {
+        background: $bg-mb;
+        position: absolute;
+        top: $header-h;
+        left: -100%;
+        width: 20%;
+        height: 100vh;
+        transition: all 500ms ease-in;
+  
+        ul {
+          text-align: center;
+          padding-top: 1rem;
+          @include flex();
+  
+          li {
+            margin-top: 0.5rem;
+            padding: 1rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            @include flex();
+            @include shadow();
+            transition: transform 250ms linear;
+            &:hover {
+              transform: scale(1.1);
+            }
+            a {
+              font-size: 1.6rem;
+              color: white;
+            }
+          }
+          .fb {
+            background: #3b5998;
+          }
+          .insta {
+            background: #c13584;
+          }
+          .yt {
+            background: #ff0000;
+          }
+          .tw {
+            background: #1da1f2;
+          }
+        }
+      }
+  
+      /*This class is to display social media icons on mobile size*/
+      .social-show{left: 0;}
+    }
+  
+    .header-bottom {
+  
+      nav {
+        background: $bg-mb;
+        position: absolute;
+        top: $header-h;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        box-shadow: 5px 5px 5px #333;
+        opacity: 0;
+        transition: all 700ms ease-in;
+        overflow-y: scroll;
+  
+        ul {
+          text-align: center;
+          padding-top: 0.5rem;
+          width: 100%;
+          padding-bottom: 4rem;
+  
+          li {
+            margin-top: 0;
+            padding: 0.5rem;
+            width: 100%;
+            border-radius: 0.2rem;
+  
+            a {
+              font-size: 1.2rem;
+              color: $text-color;
+              font-family: $s-font;
+            }
+  
+            &:hover {
+              background: $bg-color;
+              @include shadow();
+              a {
+                color: $text-white;
+                text-decoration: none;
+                
+              }
+            }
+          }
+        }
+      }
+  
+      /*This class is to display menu on mobile size*/
+      .show-nav {left: 20%; opacity: 1;}
+    }
+  }
+}

@@ -20,7 +20,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 //Header and nav
 @import 'sass/nav/nav-sm';
 @import 'sass/nav/btn-menu';
-// @import 'sass/nav/nav-lg';
+@import 'sass/nav/nav-mob-lan';
+@import 'sass/nav/nav-tablet';
+@import 'sass/nav/nav-lg';
+@import 'sass/nav/nav-xl';
 
 //Main page video
 @import 'sass/landing/landing-lg';
+
+//Footer
+@import 'sass/footer/footer-sm';
+@import 'sass/footer/footer-lg';

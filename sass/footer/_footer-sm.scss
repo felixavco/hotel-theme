@@ -1,0 +1,86 @@
+footer {
+  background: lighten($bg-color, 7%);
+  padding: 3.5rem 0;
+  
+  ul {
+    list-style: none;
+    h4{
+      color: $text-white;
+      font-family: $s-font;
+      font-weight: 500;
+      // border-bottom: 1px solid rgba($color: $text-white, $alpha: 0.3);
+      // width: 40%;
+     }
+      
+      a { 
+        color: $text-white;
+        font-size: 1.1rem;
+        font-family: $p-font;
+        transition: color 250ms linear;
+        &:hover {
+          text-decoration: none;
+          color: $text-color;
+        }
+      }
+      
+  }
+
+  .footer-social-media {
+    ul{
+      li{
+        border: 1px solid $text-white;
+        width: 50px;
+        height: 50px;
+        transition: all 250ms linear;
+        @include flex();
+        border-radius: 50%;
+
+        a{
+          font-size: 1.6rem;
+        }
+      }
+
+      .fb:hover {
+        a {color: $text-white}
+        border: 1px solid transparent;
+        background: #3b5998;
+      }
+      .insta:hover {
+        a {color: $text-white}
+        border: 1px solid transparent;
+        background: #c13584;
+      }
+      .yt:hover {
+        a {color: $text-white}
+        border: 1px solid transparent;
+        background: #ff0000;
+      }
+      .tw:hover {
+        a {color: $text-white}
+        border: 1px solid transparent;
+        background: #1da1f2;
+      }
+    }
+  }
+
+  .trademark {
+    h3 {
+      font-size: 1.7rem;
+      color: $text-white;
+      font-family: $s-font;
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  hr {
+    border: 1px solid rgba($color: $text-white, $alpha: 0.2);
+  }
+
+  .signature {
+    p,a{
+      color: #c0c0c09d;
+    }
+  }
+}

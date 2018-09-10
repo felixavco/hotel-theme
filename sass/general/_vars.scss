@@ -1,17 +1,23 @@
 $header-h: 5rem;
+$header-h2: 3.5rem;
+
 $shadow: #333;
 $text-white: #e9e7e7;
 $text-color: #333;
-$bg-color: #010144;
+$bg-color: #21618C;
 $title-font: 'Lobster', cursive;
 $p-font:'Roboto', sans-serif;
-$bg-mb: #fff;
+$s-font:'Acme', sans-serif;
+$bg-mb: #eeeeee;
+
+/*===== Screen Sizes =====*/
+$mob-lan: 500px;
+$tablet: 750px;
+$l-screen: 990px;
+$xl-screen: 1300px;
 
 
-
-
-
-//Mixins
+/*===== Mixins =====*/
 @mixin title($fs) {
   text-shadow: 2px 2px 7px $shadow;
   font-family: $title-font;
@@ -28,5 +34,7 @@ $bg-mb: #fff;
   justify-content: $jc;
   align-items: $ai;
 }
+
+
 
 

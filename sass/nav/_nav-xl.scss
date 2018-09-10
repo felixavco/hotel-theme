@@ -1,0 +1,178 @@
+@media screen and (min-width: $xl-screen) {
+  header {
+    height: 145px;
+    @include flex(column, space-around, center);
+
+    .header-top {
+      transition: all 300ms ease-in;
+      background: transparent;
+      width: 100%;
+      padding: 0 2rem;
+      margin: 0 auto;
+      .contact-info {
+        display: block;
+        width: 33%;
+        height: 100%;
+        
+        ul {
+          height: 100%;
+          @include flex(row, space-between, center);
+          padding: 0 2rem;
+
+          li {
+            height: auto;
+
+            a {
+              transition: all 300ms ease-in;
+              font-family: $p-font;
+              font-weight: 400;
+              font-size: 1.1rem;
+              color: $text-white;
+            }
+          }
+        }
+      }
+
+      .logo{
+        width: 33%;
+        height: 100%;
+        @include flex();
+        .logo-cont{
+          transition: all 300ms ease-in;
+          width: 75px;
+          height: 75px;
+          opacity: 0.3;
+        }
+      }
+
+      .social-media {
+        display: block;
+        position: static;
+        background: transparent;
+        top: 0;
+        left: 0;
+        width: 33%;
+        height: 100%;
+
+        ul {
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          padding: 0 3rem;
+          @include flex(row, space-around, center);
+
+          li{
+            width: 40px;
+            height: 40px;
+            margin-top: 0;
+            transition: all 300ms ease-in;
+            box-shadow: none;
+            @include flex();
+
+            a {
+              font-size: 1.3rem;
+              @include flex();
+            }
+          }
+
+          .fb {
+            background: transparent;
+          }
+          .insta {
+            background: transparent;
+          }
+          .yt {
+            background: transparent;
+          }
+          .tw {
+            background: transparent;
+          }
+        }
+
+      }
+
+    }
+
+    .header-bottom {
+
+      nav {
+        transition: all 300ms ease-in;
+        background: transparent;
+
+        ul {
+          width: 75%;
+          margin: 0 auto;
+          padding: 0;
+          
+          li {
+            padding: 0 3.5rem;;
+            width: auto
+          }
+        }
+      }
+    }
+
+  }
+
+  .header-xl-scroll {
+    height: 130px;
+
+    .header-top {
+      background: $text-white;
+
+      .contact-info {
+        a {
+          color: $text-color;
+        }
+      }
+
+      .logo{
+        .logo-cont{
+          transition: all 300ms ease-in;
+          width: 60px;
+          height: 60px;
+          opacity: 1;
+        }
+      }
+
+      .social-media {
+
+        ul {
+
+
+          li{
+            transition: all 300ms ease-in;
+            @include shadow();
+          }
+
+          .fb {
+            background: #3b5998;
+          }
+          .insta {
+            background: #c13584;
+          }
+          .yt {
+            background: #ff0000;
+          }
+          .tw {
+            background: #1da1f2;
+          }
+        }
+
+      }
+
+    }
+
+
+    .header-bottom {
+      nav {
+        height: 85%;
+        background: $bg-color;
+        @include shadow();
+
+      }
+    }
+    
+  }
+  
+}

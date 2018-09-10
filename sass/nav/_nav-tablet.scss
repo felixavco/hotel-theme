@@ -1,0 +1,93 @@
+@media screen and (min-width: $tablet){
+  header {
+    height: $header-h2;
+    @include flex (row, space-between, center);
+
+    h3 {
+      display: none;
+    }
+  
+    .header-top {
+  
+      .logo-cont {
+        margin-left: 2rem;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        overflow: hidden;
+        @include shadow();
+
+        
+        img {
+          width: 100%;
+        }
+      }
+  
+      .social-media {
+        display: none;
+      }
+
+      .btn-menu{
+        display: none;
+      }
+    }
+  
+    .header-bottom {
+      width: 100%;
+      height: $header-h2;
+  
+      nav {
+        padding: 0 1.5rem;
+        position: static;
+        top: 0;
+        height: 100%;
+        box-shadow: none;
+        opacity: 1;
+        width: inherit;
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        overflow-y: hidden;
+
+        
+  
+        ul {
+          text-align: center;
+          padding: 0rem;
+          width: 85%;
+          margin: 0;
+          @include flex (row, space-around, center);
+          height: 100%;
+  
+          li {
+            height: inherit;
+            margin-top: 0;
+            padding: 0rem;
+            border-radius: 0rem;
+            border-bottom: 3px solid transparent;
+            transition: all 300ms linear;
+            @include flex();
+  
+            a {
+              font-size: 1.2rem;
+              color: $text-white;
+              font-family: $s-font;
+            }
+  
+            &:hover {
+              background: transparent;
+              box-shadow: none;
+              border-bottom: 3px solid $text-white;
+              a {
+                color: $text-white;
+                text-decoration: none;
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

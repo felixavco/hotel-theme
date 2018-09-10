@@ -1,0 +1,23 @@
+@media screen and (min-width: $l-screen){
+  footer {
+    
+    .footer-social-media {
+      ul{
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+  
+    .trademark {
+      h3 {
+        font-size: 2.5rem;
+        color: $text-white;
+        font-family: $s-font;
+        span {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+  }
+}
